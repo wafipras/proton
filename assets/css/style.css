@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    
+    box-sizing: border-box;
+}
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    background-size:  cover;
+    background-position :center;
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.logo{
+   font-family: 'smooch';
+   color: white;
+   animation: neon 10s infinite;
+}
+@keyframes neon{
+    0%, 39%, 41%, 5%, 61%, 100% {
+        text-shadow: 
+        white 0 0 12px,
+        #FF00FF 0 0 24px,
+        #FF00FF 0 0 36px;
+    }
+    40%, 60% {
+        text-shadow: none;
+    }
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 25px 30px;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color:#FF00FF ;
+    transition: .5s;
+}
